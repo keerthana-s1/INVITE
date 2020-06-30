@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="gen.css">
+   <style>
+       body{
+           background-image: url('img.jpg');
+       }
+      .button{
+    background-color: rgba(49,51,48,0.50);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+   position: absolute;
+     top: 150px;
+    left:575px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    animation-name: fade;
+    animation-iteration-count: 1; 
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+}
+.old{
+    text-align: center;
+    position: absolute;
+     top: 125px;
+    left:575px;
+    font-size: 16px;
+}
+@keyframes fade{ 
+0% { 
+opacity: 0; 
+} 
+100% { 
+opacity: 1; 
+} 
+}
+.hov:hover{
+     background-color: #FD6A02;
+}
+.message{
+    width:180px;
+    color: brown;
+}
+
+.tab {
+  overflow: hidden;
+  
+  background-color: rgba(49,51,48,0.50);
+}
+
+/* Style the buttons inside the tab */
+ button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #FD6A02;
+}
+
+   </style>
+</head>
+<body>
+    <div class="tab">
+  <button class="tablinks" onclick="window.location.href='{{id}}'";>Home</button>
+</div>
+<br>
+    Hi {{user.name}}
+</body>
+</html>
